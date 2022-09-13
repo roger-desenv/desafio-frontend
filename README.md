@@ -13,7 +13,7 @@ Aprendi também a validação dos formulários, porém meu maior desafio foi rea
 
 ## Links
 
-- Solução: [Repositório](https://github.com/roger-desenv/teste-vaga-emprego)
-- Live Preview: [GitHub Pages](https://roger-desenv.github.io/teste-vaga-emprego/)
+- Solução: [Repositório](https://github.com/roger-desenv/desafio-frontend/)
+- Live Preview: [GitHub Pages](https://roger-desenv.github.io/desafio-frontend/)
 
 
