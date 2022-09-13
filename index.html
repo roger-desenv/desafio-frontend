@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="src/style.css">
+  <title>Teste Vaga Emprego</title>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="header">
+        <h3>uma seleção de produtos</h3>
+        <h1>especial para você</h1>
+        <h4>Todos os produtos desta lista foram selecionados a partir da sua navegação. Aproveite!</h4>
+
+        <nav>
+          <ul class="nav">
+            <li><a href="#">Conheça o Linx</a></li>
+            <li><a href="#">Ajude o algoritmo</a></li>
+            <li><a href="#">Seus produtos</a></li>
+            <li><a href="#">Compartilhe</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <section class="container-main">
+    
+    <div class="container-help-algorithm">
+      <div class="container-left">
+        <h2>Ajude o Algorítimo a ser mais certeiro</h2><br>
+        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).<br><br>
+        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+      </div>
+
+      <div class="container-right">
+        <form>
+          <label>Seu nome:</label><br>
+          <input type="text" required="required" class="field" id="nameClient" pattern="[a-z\s]+$" >
+
+          <label>E-mail:</label><br>
+          <input type="email" required="required" class="field" id="emailClient" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" /> 
+
+          <label>CPF:</label><br>
+          <input type="text" name="cpf" required="required" class="field" id="cpfClient" maxlength=11" pattern="\d{3}\.?\d{3}\.?\d{3}-?\d{2}" title="Digite um CPF no formato: xxx.xxx.xxx-xx">
+
+          <label for="masculino">Masculino</label>
+          <input type="radio" name="sexo" class="field-radios" value="masculino" id="masculino" checked>
+          <label for="feminino">Feminino</label>
+          <input type="radio" name="sexo" class="field-radios" value="feminino" id="feminino">
+
+          <input type="submit" class="btnForm" id="btnForm" value="Enviar">
+         
+        </form>
+        
+      </div>
+    </div>
+  </section>
+
+  <section class="mainProducts">
+  
+    <div class="sectionTitle">
+      <h2>Sua seleção especial</h2>
+    </div>
+
+      <div id="listProducts"></div>
+      
+      <div id="loadProducts">
+          <button id="showProducts" class="btn">Ainda mais produtos aqui!</button>
+      </div>
+  </section>
+
+  <div class="containerShareText">
+    <h2>Compartilhe a novidade</h2>
+    <h4>Todos os produtos desta lista foram selecionados a partir da sua navegação. Aproveite!</h4>
+  </div>
+
+
+  <section class="containerShare">
+    <form action=""> 
+      <div class="containerShareForm">
+        <fieldset class="friendName">
+          <label>Nome do seu amigo:</label><br>
+          <input type="text" required="required" class="formFriend" id="nameFriend" pattern="[a-z\s]+$" >
+
+        </fieldset> 
+
+        <fieldset class="friendEmail">  
+          <label>Email:</label><br>
+          <input type="email" required="required" class="formFriend" id="emailFriend" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" /><br>
+        </fieldset> 
+      </div>
+      <button type="submit" class="btnShare">Enviar agora</button>
+    </form>
+  </section>
+
+
+  <section class="containerFooter">
+    <p>Testando suas habilidades em HTML, CSS e JS.</p>
+    <p>Linx Impulse</p>
+    <p>2019</p>
+  </section>
+
+
+  <script src="src/script.js"></script>
+</body>
+</html>
